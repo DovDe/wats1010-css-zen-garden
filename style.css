@@ -9,8 +9,19 @@ body {
 	padding: 0;
 	font-weight: 100;
 	color: #d5d3d3;
-
-
+}
+body :link {
+	color: #d5d3d3;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 100%;
+}
+body a:hover {
+	color: #292669;
+}
+body :visited {
+	color: #d5d3d3;
 }
 h1, h2, h3, h4, h5, h6, p {
 	font-weight: 100;
@@ -18,6 +29,7 @@ h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	padding: 0;
 }
+
 .intro {
 	margin: 0;
 	padding: 0 0 1% 0;
@@ -59,16 +71,21 @@ header h2 {
 	padding: 2%;
 	margin-bottom: 4%;
 }
+.summary:hover {
+	background: black;
+	 box-shadow: 0px 0px 10px #540c0b; 
+    -moz-box-shadow: 0px 0px 10px #540c0b;
+    -webkit-box-shadow: 0px 0px 10px #540c0b;
+}
 
 .design-selection {
 	position: absolute;
 	width: 20%;
-	top: 35em;
+	top: 32em;
 	right: 5em;
   background: #12100f;
 	padding: 2%;
-	margin-bottom: 0;
-}
+	}
 .design-selection ul {
 	list-style: none;
 	padding: 0;
@@ -76,14 +93,22 @@ header h2 {
 .design-selection .design-name {
 	float: left;
 	width: 80%;
-	margin-right: 20%
+	margin-right: 20%;
+	margin-top: 0.5em;
 }
 
 .design-selection li a:first-of-type:after {
   content: url(css_garden_square_bulliten.jpg);
 	position: absolute;
 	right: 2em;
+	margin: 0.7em 0 0.7em 0;
 	}
+.design-selection a:hover {
+	color: #292669;
+}
+.design-selection:hover {
+	background: black;
+}
 .preamble {
 	clear: both;
 	width: 30%;
@@ -95,6 +120,9 @@ header h2 {
 .preamble h3 {
 	padding-bottom: 0.5em;
 	font-size: 140%;
+}
+.preamble:hover {
+	background: black;
 }
 .main {
 	clear: both;
@@ -114,6 +142,13 @@ header h2 {
 	text-align: justify;
 	color: #f1f0ef;
 	}
+.explanation:hover {
+	background: black;
+}
+.explanation h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 140%;
+}
 .participation {
 	clear: both;
 	float: left;
@@ -123,6 +158,13 @@ header h2 {
 	background: #12100f;
 	margin: 4% 4.5% 3% 4.5%;
 }
+.participation h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 140%;
+}
+.participation:hover{
+	background: black;
+}
 .benefits {
 	float: right;
 	width: 20%;
@@ -131,12 +173,26 @@ header h2 {
 	padding: 1%;
 	border: 2px solid #540c0b;
 }
+.benefits h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 140%;
+}
+.benefits:hover {
+	background: black;
+}
 .requirements {
 	clear: both;
 	padding: 1.5em;
 	text-align: justify;
 	border: 2px solid #540c0b;
 	margin: 1em 3em 3em 3em;
+}
+.requirements:hover {
+	background: black;
+}
+.requirements h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 140%;
 }
 footer {
 	background: #12100f;
@@ -156,17 +212,28 @@ footer a:first-of-type {
 	border: 1px solid #292669;
 	padding: 1em;
 }
+
 .design-archives ul {
 	list-style-type: none;
+	padding-right: 1em;
 	}
 .design-archives li::before{
-	content: url(css_garden_square_bulliten.jpg
-	
-	
+	content: url(css_garden_square_bulliten.jpg);
+	padding-right: 1em;
+}
+.design-archives li:last-of-type {
+	margin-bottom: 1em;
+}
+
+.archives {
+	margin-left: 2.2em;
+}
+.desgin-archives:hover {
+	background: black;
 }
 .zen-resources {
 	position: absolute;
-	top: 139em;
+	top: 144em;
 	left: 22%;
 }
 .zen-resources .resources {
